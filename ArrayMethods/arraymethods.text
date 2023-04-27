@@ -1,0 +1,9 @@
+ 1.) Map => We use map function to transform each and every element of an array and get a new array out.
+ 2.) Filter => Filter function is used to filter the values inside an array 
+ 3.) Reduce => reduce function iterate over each and every element of an array. 
+
+It has two parameters first is function, which also contains two parameters one is acc and second one is current 
+
+the current will be each value and the accumulator is used to accumulate the values or results we want to get out of the array. 
+
+Second is the initial value.  
