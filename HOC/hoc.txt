@@ -1,0 +1,3 @@
+What is Higher Order Function?
+
+A function takes another function as an argument or return a function is known as Higher Order Function 
