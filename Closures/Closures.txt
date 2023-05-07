@@ -1,0 +1,13 @@
+Def. 1) A Closure is a function bundled together with its parent's lexical scope.
+Def. 2) A function along with its lexical bundled together forms a Closure.
+
+Uses of Closures:-
+1.) Module Design Pattern
+2.) Currying
+3.) functions like once
+4.) memoize
+5.) maintaining state in async world
+6.) setTimeouts
+7.) Iterators
+etc.
+
