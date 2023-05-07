@@ -1,0 +1,2 @@
+Hoisting is a phenomena in JavaScript using which you can access the variables and functions even 
+before you have initialized it without any error.

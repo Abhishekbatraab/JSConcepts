@@ -1,0 +1,9 @@
+Difference between these three
+================================
+Call => We have a call method which is used to invoke a function directly by passing in the reference
+        point to the the 'name' object.
+Apply => Apply is same as the 'Call' method the only Difference is it takes the second argument as an array 
+         list. 
+Bind => Bind method doesn't directly invokes the method but gives you the copy of exactly same method  
+        which can be invoke later
+
