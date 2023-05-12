@@ -1,0 +1,7 @@
+what is callback function?
+
+1.) If you pass a function into another function that function is called a Callback function.
+
+Note: JavaScript is a single threaded language 
+
+2.) so callback function gives us the power of asynchrnousty 

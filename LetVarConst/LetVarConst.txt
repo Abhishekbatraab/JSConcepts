@@ -1,0 +1,29 @@
+Variable declare with let and const will be stored in a different memory space than the global
+so if we will try to access these variable before initialization it will give the reference error 'Cannot
+access the variable before initialization'
+
+Difference b/w these three
+
+1.) let and const has a separate memory rather than the global space
+var is related to the global space
+2.) let is strict than var means we can redeclare the variable with var keyword but not in the case of 
+let
+e.g. 
+var b = 100;
+var b = 1000;
+//this will not give any error
+let a= 10;
+let a = 10;
+//this will get an error --> Syntax error 'Identifier a has already been declared
+3.) let and const 
+Const is more strict than let, hence you can't initialize the value later you must initialize the value 
+at the same at the time of declaration otherwise you'll get the Syntax error -> Missing initializer
+e.g. (i)
+const b;
+b=1000;
+e.g.(ii)
+const b = 100;
+b = 1000 //syntax error cannot redeclare
+
+
+best one is const then let then var
