@@ -20,7 +20,7 @@
 
 // var z = x();
 // console.log(z);
-//Now there are 1000 lines of code and we want to call this function z and want to log the value of a 
+//Now there are 1000 lines of code and we want to call this function z and want to log the value of 'a' 
 // z();
 //after the 1000 lines of code the function y still hold the reference of 'a';
 //the thing is wherever you execute this function z it remembers the value of a

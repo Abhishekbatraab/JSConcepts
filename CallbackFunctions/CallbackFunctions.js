@@ -32,7 +32,7 @@ function attachEventListener(){
     });
 }
 attachEventListener();
-//the callback function makes a closure with this attacheventlistener function and has its
+//the callback function makes a closure with this attachEventlistener function and has its
 //lexical scope
 
 

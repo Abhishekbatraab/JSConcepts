@@ -41,6 +41,7 @@ console.log('Reduce output is, ', output);
 //{26: 2, 75: 1, 50: 1}
 
 const usersCount = users.reduce(function(acc, curr){
+  console.log("acc is ", acc);
   if(acc[curr.age]){
     acc[curr.age] = ++acc[curr.age];
   }else{
