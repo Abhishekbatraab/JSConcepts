@@ -1,0 +1,13 @@
+Primitive Values => All types except Object define immutable values represented directly at the lowest level of the language. We refer to values of these types as primitive values.
+
+All primitive types, except null, can be tested by the typeof operator. typeof null returns "object", so one has to use === null to test for null.
+
+All primitive types, except null and undefined, have their corresponding object wrapper types, which provide useful methods for working with the primitive values.
+
+//Important note
+Object literal syntax vs. JSON
+The object literal syntax is not the same as the JavaScript Object Notation (JSON). Although they look similar, there are differences between them:
+
+JSON only permits property definition using the "property": value syntax. The property name must be double-quoted, and the definition cannot be a shorthand. Computed property names are not allowed either.
+JSON object property values can only be strings, numbers, true, false, null, arrays, or another JSON object. This means JSON cannot express methods or non-plain objects like Date or RegExp.
+In JSON, "__proto__" is a normal property key. In an object literal, it sets the object's prototype.

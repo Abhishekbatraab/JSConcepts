@@ -1,0 +1,102 @@
+What is Scope?
+The scope is the current context of execution in which values and expressions are "visible" or can be referenced.
+=>If a variable or expression is not in the current scope, it will not be available for use.
+=> Scopes can also be layered in a hierarchy, so that child scopes have access to parent scopes, but not vice versa.
+
+JavaScript has the following kinds of scopes:
+1.) Global Scope => The default scope for all the code running in script mode.
+2.) Module Scope => The scope for code running in the module mode.
+3.) Function Scope => The scope created with a function.
+4.) Block Scope => The scope created with a pair of curly braces (block)
+In addition, variables declared with let or const can belong to an additional scope.
+
+Blocks only scope let and const declarations, but not var declarations.
+
+let is Block Scoped
+
+The let keyword is block-scoped (variable can be accessed only in the immediate block).
+
+What Is the Scope of Variables in Javascript and Its Types
+By Simplilearn
+Last updated on Feb 22, 202310114
+Your Complete Guide on the Scope of Variables in JavaScript
+Table of Contents
+Understanding Variables in JavaScriptWhat is the Scope of Variables in Javascript?What is Global Scope?What is Local Scope?What is Block Scope?View More
+Every programming language in today's world has the concept of variables. Variables are used to store values (number, string, boolean) that can change at any point in time. But, did you ever notice that these variables always have a scope, and you can't use them outside of that scope? In this tutorial, you will explore the Scope of Variables in JavaScript.
+
+Understanding Variables in JavaScript
+Variables in JavaScript work differently from other languages. Here, you don't have to specify the type of variable you are using. Unlike other programming languages, you don't have different data types for different types of values. 
+
+You can use var, const, and let keyword to declare a variable, and JavaScript will automatically determine the type of this variable according to the value passed. 
+Variables_in_Javacript_1.
+
+So, this was a brief introduction to Variables in JavaScript. In the next section, you will go through the Scope of Variables in JavaScript.
+
+Basics to Advanced - Learn It All!
+Caltech PGP Full Stack DevelopmentEXPLORE PROGRAMBasics to Advanced - Learn It All!
+What is the Scope of Variables in Javascript?
+Scope of variables refers to the accessibility of a particular variable within the program. 
+
+For example, assume you have two different functions. First, you declare a variable in function 1. Then, you move on to the following function, i.e., function 2. Is it possible if you try to access the variable made in function 1 from function 2? This refers to the Scope of a Variable in JavaScript.
+
+Variables_in_Javacript_2.
+
+ JavaScript variables have different scopes, they are:
+
+Global Scope
+Local Scope 
+Block Scope
+Function Scope
+Have a look at the different Scopes in detail.
+
+What is Global Scope?
+Any variable declared outside of a function is said to have Global Scope.
+In simple terms, a variable that can be accessed anywhere in the program is known as a variable with global scope. Globally scoped variables can be defined using any of the three keywords: let, const, and var. 
+Variables_in_Javacript_3
+
+What is Local Scope?
+Any variable that you declare inside a function is said to have Local Scope. You can access a local variable can within a function. If you try to access any variable defined inside a function from outside or another function, it throws an error.
+Variables_in_Javacript_4.
+
+Since you cannot access a local variable from outside the function, you can have a variable of the same name in another function as well.
+Variables_in_Javacript_5
+
+Front or Back-End Development? Learn It All!
+Caltech Coding BootcampEXPLORE PROGRAMFront or Back-End Development? Learn It All!
+What is Block Scope?
+Before introducing ES6 (ECMAScript 6) in 2015, JavaScript had only two types of scopes: Global Scope and Local Scope. 
+With the introduction of let and const keywords, it added a new type of Scope in JavaScript. You cannot access the variables declared inside a particular block (represented by {}) from outside the block. 
+Variables_in_Javacript_6.
+
+The block scope does not work with the var keyword. You can either use let or const keywords for that.
+Variables_in_Javacript_7
+
+What is Function Scope?
+With the creation of each new function, it creates a new scope in JavaScript. You cannot access variables defined inside a function from outside the function or from another function. Var, let, and const work similarly when used inside a function. 
+Variables_in_Javacript_8.
+
+Get the Coding Skills You Need to Succeed
+Full Stack Development-MEANEXPLORE PROGRAMGet the Coding Skills You Need to Succeed
+JavaScript Strict Mode for Defining Scope of a Variable 
+In JavaScript, if you forget to declare a variable with a keyword: var, let, and const, JavaScript automatically takes it as a global variable, and you can access it anywhere in the program. 
+
+Variables_in_Javacript_9
+
+To avoid such mistakes and confusion, the strict mode was introduced in JavaScript with ES5 (ECMAScript 5) in the year 2009.
+
+Strict mode will throw an error if you try to use the same syntax after including "strict mode" in your program. It will help you in writing cleaner and more secure code.
+Variables_in_Javacript_10
+
+Just like variables, strict mode too can be used either globally or locally. If you write "use strict" at the program's start, it will be used globally. Otherwise, you can also use strict mode locally inside a function.
+Variables_in_Javacript_11.
+
+All the modern browsers support Strict mode, except internet explorer 9 and its previous versions.
+Variables_in_Javacript_12
+
+Life of a Variable in JavaScript
+==================================
+
+The lifespan of a variable in JavaScript depends upon the scope of that variable. It starts when it declares the variable.
+
+A local variable lives until the function is under execution. The moment a function completes, the local variable gets deleted.
+A Global variable lives until the user closes the program or until the web browser is closed. However, if the user changes the window without closing the program, the global variable remains there. 
