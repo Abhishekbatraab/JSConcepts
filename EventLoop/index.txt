@@ -1,0 +1,55 @@
+JavaScript single-threaded model
+
+JavaScript is a single-threaded programming language. This means that JavaScript can do only one thing at a single point in time.
+
+The JavaScript engine executes a script from the top of the file and works its way down. It creates the execution contexts, pushes, and pops functions onto and off the call stack in the execution phase.
+
+If a function takes a long time to execute, you cannot interact with the web browser during the function’s execution because the page hangs.
+
+A function that takes a long time to complete is called a blocking function. Technically, a blocking function blocks all the interactions on the webpage, such as mouse click.
+
+An example of a blocking function is a function that calls an API from a remote server.
+
+The following example uses a big loop to simulate a blocking function:
+
+function task(message) {
+    // emulate time consuming task
+    let n = 10000000000;
+    while (n > 0){
+        n--;
+    }
+    console.log(message);
+}
+
+console.log('Start script...');
+task('Call an API');
+console.log('Done!');
+
+Callbacks to the rescue
+==========================
+
+To prevent a blocking function from blocking other activities, you typically put it in a callback function for execution later. 
+
+for example:-
+
+console.log('Start script...');
+
+setTimeout(() => {
+    task('Download a file.');
+}, 1000);
+
+console.log('Done!');
+
+The web browser also has other components, not just the JavaScript engine.
+
+When you call the setTimeout() function, make a fetch request, or click a button, the web browser can do these activities concurrently and asynchronously.
+
+The setTimeout(), fetch requests, and DOM events are parts of the Web APIs of the web browser.
+
+In our example, when calling the setTimeout() function, the JavaScript engine places it on the call stack, and the Web API creates a timer that expires in 1 second.
+
+Then JavaScript engine place the task() function is into a queue called a callback queue or a task queue:
+
+The event loop is a constantly running process that monitors both the callback queue and the call stack.
+if the callback stack is not empty, the event loop waits until it is empty and places the next function from the
+callback queue to the call stack. If the callback queue is empty nothing will happen.

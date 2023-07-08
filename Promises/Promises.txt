@@ -1,8 +1,50 @@
 What is a Promise?
 
+Promises are used to handle asynchronous operations in JavaScript
+
 The promise is an object representing the eventual completion or failure of an asynchronous operation.
 
-Importancec of promise:-
+Importance of promise:-
 1.) To prevent callback hell
 2.) prevent inversion of control
 3.) generate trust.
+
+There are two things we have with the promise object one is promise state and second is promise result.
+Initialy the promise is in pending state when API takes its time and completes the operation, then the promise state gets changed to fulfilled.
+
+Before promise we call the APIs like this
+
+createOrder(cart, function(orderId){
+    proceedToPayment(orderId, function(){
+        showOrderSummary(paymentInfo, function(){
+            updateWalletBalance()
+        })
+    });
+})
+
+after promises we use the promise chaining
+
+ createOrder(cart)
+ .then(function(orderId){
+    return proceedToPayment(orderId)
+  })
+  .then(function(paymentInfo){
+    return showOrderSummary(paymentInfo);
+  })
+  .then(function(paymentInfo){
+    return updateWalletBalance(paymentInfo)
+   })
+
+Now we will see how to create a promise
+
+to create a promise we have to use a Promise Constructor
+
+new Promise(function(resolve, reject)){
+
+}
+//the resolve and reject are the functions that are provided by the javascript
+
+for error handling we use the catch block attaching with promise chain.
+
+//Async/Await
+

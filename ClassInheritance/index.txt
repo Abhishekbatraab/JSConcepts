@@ -1,0 +1,24 @@
+Class Inheritance
+===================
+
+Inheritance enables you to define a class that takes all the functionality from a parent class and allows you to add more.
+
+Using class inheritance, a class can inherit all the methods and properties of another class.
+
+Inheritance is a useful feature that allows code reusability.
+
+To use class inheritance, you use the extends keyword.
+
+JavaScript super() keyword
+==========================
+
+The super keyword used inside a child class denotes its parent class.
+
+Overriding Method or Property
+================================
+If a child class has the same method or property name as that of parent class, it will use the method  and property of child class. This concept is called Method Overriding.
+
+Uses of Inheritance
+Since a child class can inherit all the functionalities of the parent's class, this allows code reusability.
+Once a functionality is developed, you can simply inherit it. No need to reinvent the wheel. This allows for cleaner code and easier to maintain.
+Since you can also add your own functionalities in the child class, you can inherit only the useful functionalities and define other required features.

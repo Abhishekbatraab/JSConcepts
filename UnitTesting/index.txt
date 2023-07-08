@@ -1,0 +1,15 @@
+What is a Unit Test?
+===================
+
+A unit test verifies the behavior of a software unit in the system. It verifies whether a small and isolated piece of the codebase called “unit” behaves as the developer intended.
+
+=> Unit test verifies the smallest parts or components by comparing the actual behaviour with the expected behaviour in the complete isolation.
+=> here complete isolation means that, during the unit testing, devs do not connect the application with external dependencies such as database, the file system or HTTP services.
+=> This allows unit tests to be fast and stable since they won't fail due to problems integrating with those
+external services.
+
+Why write Unit Tests?
+=====================
+
+
+

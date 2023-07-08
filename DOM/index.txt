@@ -1,0 +1,88 @@
+DOM stands for => Document Object Model
+
+It is a programming interface that allows us to create, change or remove elements from the document.
+we can also add events to these elements to make our page more dynamic.
+
+DOM -> HTML document as a tree of nodes
+A node represents an HTML element.
+
+document -> root node -> contains one child node -> html element
+
+html element contains two children which are <head> and <body> elements.
+
+Both the <head> and <body> elements have children of their own.
+
+Tree of Nodes:-
+
+Document
+->html
+    ->head
+        ->meta
+        ->title
+    ->body
+        ->h1
+        ->h2
+
+We can access these elements in the document and make changes to them using JavaScript.
+
+How to Select Elements in the Document
+======================================
+
+There are a few different methods for selecting an element in the HTML document.
+
+getElementById();
+querySelector();
+querySelectorAll();
+
+1.) getElementById
+
+In HTML, ids are used as unique identifiers for the HTML elements.
+This means you cannot have the same id name for two different elements.
+
+//this is incorrect
+<p id="para">This is my first paragraph.</p>
+<p id="para">This is my second paragraph.</p>
+
+You would have to make sure those ids are unique like this:
+<p id="para1">This is my first paragraph.</p>
+<p id="para2">This is my second paragraph.</p>
+
+In JavaScript, we can grab an HTML tag by referencing the id name.
+document.getElementById("id name goes here")
+
+2.) querySelector
+
+You can use this method to find elements with one or more CSS selectors.
+
+If I wanted to find and print to the console the h1 element, then I could use that tag name inside the querySelector().
+
+If I wanted to target the class="list" to print out the unordered list to the console, then I would use .list inside the  querySelector().
+
+The . before list tells the computer to target a class name. If you wanted to target an id then you would use a # symbol before the name.
+
+3.)  querySelectorAll()
+
+This method finds all of the elements that match the CSS selector and returns a list of all of those nodes.
+
+If I wanted to find all of the <li> items in our example, I could use the > child combinator to find all of the children of the <ul>
+
+If we wanted to print out the actual <li> items with the tv shows, we can use a forEach() to loop over the NodeList and print out each item.
+
+How to Add New Elements to the Document
+=========================================
+
+We can use the document.createElement() to add new elements to the DOM tree.
+
+How to Use the Style Property to Change Inline CSS Styles
+==========================================================
+
+How to Use addEventListener() to Listen for Events on the Page
+===============================================================
+
+This method allows you to attach an event to an HTML element like a button.
+
+Document.querySelector() to access the <div> and the buttons
+EventTarget.addEventListener() to listen for button clicks
+Document.createElement to create the element
+Node.appendChild() to add the child
+Node.removeChild() to remove the child.

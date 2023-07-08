@@ -66,5 +66,15 @@ calculateDiameter(radius);
  }
 
  console.log(calculate(radius, area));
- console.log(calculate(radius, circumference))
+ console.log(calculate(radius, circumference));
+
+ Array.prototype.calculate = function(logic){
+    let output=[];
+    for(let i=0;i<radius.length;i++){
+        output.push(logic(radius[i]));
+    }
+    return output;
+ }
+ radius.map(area);
+ radius.calculate(area);
  
