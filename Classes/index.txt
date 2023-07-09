@@ -54,7 +54,7 @@ In JavaScript, getter methods get the value of an object and setter methods set 
 JavaScript classes may include getters and setters. You use the get keyword for getter methods and set for setter methods.
 
 Hoisting
-===========
+=========
 
 A class should be defined before using it. Unlike functions and other JavaScript declarations, the class is not hoisted.
 
