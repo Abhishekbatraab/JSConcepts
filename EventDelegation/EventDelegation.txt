@@ -1,0 +1,29 @@
+Event delegation is a pattern based upon the concept of Event Bubbling. It is an event-handling pattern that
+allows you to handle events at higher level in the DOM tree other than the level where the event was 
+first received. 
+
+A Brief Intro to Event Propagation
+
+By default, events triggered on an element propagate up the DOM tree to the element's parent, its ancestors, and on up until the root element (html).
+
+Example:-
+
+<div>
+  <span>
+    <button>Click Me!</button>
+  </span>
+</div>
+
+How Does Event Delegation Work?
+
+With event delegation, instead of handling the click event on the button, you can handle it on the div.
+
+The idea is that you "delegate" the handling of an event to a different element (in this case, the div, which is a parent element) instead of the actual element (the button) that received the event.
+
+const div = document.getElementsByTagName("div")[0]
+
+div.addEventListener("click", (event) => {
+  if(event.target.tagName === 'BUTTON') {
+    console.log("button was clicked")
+  }
+})

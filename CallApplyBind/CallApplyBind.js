@@ -14,5 +14,6 @@ function sayHello(age, profression){
 // console.log(sayHello.apply(obj, [24, "Software Engineer"]));
 //Bind => the bind function gives the copy of a function which we can call later
 const bindFunc = sayHello.bind(obj);// it provides the resusable function
+console.log(bindFunc);
 console.log(bindFunc(24, "Software Engineer"));
 console.log(bindFunc(36, "Youtuber"));
