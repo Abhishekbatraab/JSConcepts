@@ -48,11 +48,11 @@ class Person{
         this.name = name
     }
 
-    get personName(){
+    getPersonName(){
         return this.name
     }
 
-    set personName(x){
+    setPersonName(x){
         this.name = x
     }
 }
@@ -62,3 +62,5 @@ console.log(person1.name);//Jack
 person1.name = 'Sarah';
 console.log(person1.name)//Sarah
 console.log(typeof Person);
+person1.setPersonName('Abhishek');
+console.log(person1.getPersonName());

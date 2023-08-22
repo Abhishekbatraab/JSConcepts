@@ -9,8 +9,7 @@ const multiplyThree = nums.map((num,i,arr)=>{
 })
 console.log(multiplyThree);
 
-//2.) Filter => This method takes each element in an array and applies a conditional statement against it, if the conditional statement get true it pushed the value in the output array,
-//otherwise it will not push into it 
+//2.) Filter => This method takes each element in an array and applies a conditional statement against it, if the conditional statement get true it pushed the value in the output array,otherwise it will not push into it 
 
 const moreThanTwo = nums.filter((num)=>{
     return num>2
